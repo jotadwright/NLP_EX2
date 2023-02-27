@@ -65,9 +65,6 @@ df_acomp = pd.DataFrame(list(zip(acomp_nouns,acomp_sents)),columns=["noun","sent
 df_eventv = pd.DataFrame(list(zip(eventv_nouns,eventv_sents)),columns=["noun","sentence"])
 df_eventp = pd.DataFrame(list(zip(eventp_nouns,eventp_sents)),columns=["noun","sentence"])
 
-print(df_acl)
-print(df_eventv)
-
 # Get total frequencies of informational nouns
 info = acl_nouns + acomp_nouns
 info_count = Counter(info)
